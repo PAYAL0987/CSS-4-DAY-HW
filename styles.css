@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width:100vw;
+    overflow-x: hidden;
+}
+
+.top-page{
+    background-image: url(top-page .jpg);
+    height: 300px;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    box-shadow: 0 0 10px black;
+
+    & > #search{
+        position:sticky;
+        top:50px;
+        width:60vw;
+        height: 50px;
+        background-color: #631112;
+        border-radius: 10px;
+        border: none;
+        color: #fff;  
+        /* margin-bottom: 30px;      */
+    }
+
+    ::placeholder{
+        color: #fff;
+        padding:10px;
+    }
+}
+
+
+
+.main-page{
+    background-color: #ECD4D5;
+    display:flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width:100vw;
+    margin-bottom:20px;
+    margin-left: -12px;
+    
+    
+
+
+    & > .coffee{
+        display: flex;
+        justify-content: space-evenly;
+        padding:40px 0;
+
+
+        & > .img{
+            text-align: center;
+            
+            & > p{
+                margin-top:20px;
+                font-weight: 700;
+            }
+
+            & > img{
+                margin-right:20px;
+                height:145px;
+                width:145px;
+                border-radius: 50%;
+                box-shadow: 0 10px 10px black;
+            } 
+
+            & > img:hover{
+                /* height:160px;
+                width:160px; */
+                scale:1.1;
+                border-radius: 50%;
+                box-shadow: 0 10px 10px black;
+            }
+        }
+    }
+
+
+
+    & > .coffee-house{
+            margin:5vh 5vw;
+            border:10px solid #DAA3A2;
+            padding-top:20px 0;
+            color:#A5292A;
+            background-color: #DAA3A2;
+            /* border:none; */
+            border-radius: 10px;
+            box-shadow:0 0 10px;
+    
+            & > p{
+                margin:3vh 0;
+                padding:0 20px;
+            }
+            & >h2{
+                padding: 20px;
+            }
+    }
+
+
+
+    .Coffee-list{
+        margin:0 5vw;
+        padding-bottom: 0;
+        border:10px solid #DAA3A2;
+        /* padding:; */
+        color:#A5292A;
+        background-color: #DAA3A2;
+        /* border:none; */
+        border-radius: 10px;
+        box-shadow:0 0 10px;
+        margin-bottom:50px;
+        height:auto;
+
+        & > h2{
+            padding: 20px;
+        }
+
+        & > p{
+            margin-top:3vh;
+            padding-bottom:0;
+        }
+
+        & > ol > li{
+            margin:10px 20px;
+        }
+    }
+}
